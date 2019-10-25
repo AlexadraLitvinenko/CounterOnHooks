@@ -29,18 +29,5 @@ function App() {
     </>
   );
 }
-import React, { useState } from 'react';
-
-const App = () => {
-  const [count = 0, action] = useState(count);
-  return (
-    <div>
-      <h2>Counter of clicks : {count}</h2>
-      <button onClick={() => action(count + 1)}>increase</button>
-      <button onClick={() => action(count - 1)}>decrease</button>
-      <button onClick={() => action(0)}>reset</button>
-    </div>
-  );
-};
 
 export default App;
